@@ -1,0 +1,9 @@
+object Host "{{hostname}}" {
+  address = "{{address}}"
+  import "ambari-server"
+  vars.ambari_user = "{{user}}"
+  vars.ambari_password = "{{password}}"
+  vars.ambari_port = "{{port}}"
+  vars.ambari_services = {{services}}
+  vars.ambari_cluster = "{{cluster}}"
+}
